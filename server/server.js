@@ -57,7 +57,7 @@ app.delete('/todos/:id',(req,res)=>{
     if(!todo){
       retutn res.status(404).send();
     }
-    res.status(200).send({todo});
+    res.send({todo});
   },(e)=>{
     res.status(400).send();
   });
